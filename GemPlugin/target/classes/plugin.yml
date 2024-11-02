@@ -1,0 +1,19 @@
+name: GemPlugin
+version: '1.0'
+main: org.example.gemplugin.GemPlugin
+api-version: '1.21.1'
+description: A plugin that grants players powerful gems with unique abilities.
+author: LeonTab
+
+commands:
+  gems:
+    description: View your current gem and its level.
+    usage: /gems
+    permission: gemplugin.gems
+    permission-message: You don't have permission to use this command.
+
+  gem:
+    description: Choose your gem (first-time players only).
+    usage: /gem <gemName>
+    permission: gemplugin.gem
+    permission-message: You don't have permission to use this command

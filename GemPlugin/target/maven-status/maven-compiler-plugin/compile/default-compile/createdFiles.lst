@@ -1,0 +1,5 @@
+org\example\gemplugin\GemListener.class
+org\example\gemplugin\GemsCommand.class
+org\example\gemplugin\GemPlugin.class
+org\example\gemplugin\GemCommand.class
+org\example\gemplugin\Gem.class
