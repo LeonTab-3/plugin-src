@@ -1,0 +1,8 @@
+name: ClearChat
+version: 1.0
+main: org.example.clearchat.ClearChatPlugin
+author: YourName
+description: A plugin to clear the chat for everyone.
+commands:
+  clearchat:
+    description: Clears the chat for everyone.

@@ -1,0 +1,4 @@
+name: InvisArrow
+version: '1.0'
+main: org.example.invisarrow.InvisibleArrowsPlugin
+api-version: '1.19'

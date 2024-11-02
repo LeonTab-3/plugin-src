@@ -1,0 +1,8 @@
+name: RTPGUIPlugin
+main: org.example.rtpgui.RTPGUIPlugin
+version: 1.0
+api-version: 1.19
+commands:
+  rtp:
+    description: Opens the Random Teleport GUI
+    usage: /rtp

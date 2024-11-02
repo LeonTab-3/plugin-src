@@ -1,0 +1,5 @@
+name: SpiderAbility
+main: org.example.battlepass.Battlepass
+version: 1.0
+api-version: 1.20
+description: A plugin that adds a spider-like ability as a reward for killing spiders.

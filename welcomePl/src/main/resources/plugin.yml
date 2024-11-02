@@ -1,0 +1,4 @@
+name: welcomePl
+version: '1.0'
+main: org.example.welcomepl
+api-version: '1.19'
