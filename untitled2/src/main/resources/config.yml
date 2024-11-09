@@ -1,0 +1,59 @@
+# Dungeon settings
+dungeon:
+  enabled: true                            # Whether the dungeon is enabled or not
+  lobby_time: 300                          # Time in seconds before the dungeon starts
+  enabled_worlds:
+    - "world"                              # Worlds where the dungeon can be played
+    - "dungeon_world"
+
+  # Money drop settings
+  moneydrop:
+    enabled: true                           # Whether money drops are enabled
+    disabled_worlds:
+      - "world_nether"                      # Worlds where money drops are disabled
+      - "world_the_end"
+    no_drop_message: "&cYou don't have permission to drop money."  # Message shown if player has no permission or drops 0%
+    drop_message: "&aYou dropped %moneydrop_percentage%% of your balance."  # Message shown with the drop percentage
+
+# Messages
+messages:
+  start: "&8[&cDungeon&8] &aDungeon is starting!"
+  forcestarted: "&8[&cDungeon&8] &aDungeon has been forcibly started by %player%!"
+  countdown_messages:
+    - "&8[&cDungeon&8] &aDungeon is starting in &7&n5m&a!"
+    - "&8[&cDungeon&8] &aDungeon is starting in &7&n3m&a!"
+    - "&8[&cDungeon&8] &aDungeon is starting in &7&n1m&a!"
+    - "&8[&cDungeon&8] &aDungeon is starting in &7&n30s&a!"
+    - "&8[&cDungeon&8] &aDungeon is starting in &7&n5s&a!"
+    - "&8[&cDungeon&8] &aDungeon is starting in &7&n3s&a!"
+    - "&8[&cDungeon&8] &aDungeon is starting in &7&n2s&a!"
+    - "&8[&cDungeon&8] &aDungeon is starting in &7&n1s&a!"
+    - "&8[&cDungeon&8] &aDungeon has started!"
+
+# Rewards for bosses based on damager position
+rewards:
+  bosses:
+    "ExampleBoss":
+      rewards:
+        1:
+          - "diamond 1 100"                   # 100% chance to get 1 diamond
+          - "Command: /give %player% diamond 5" # 100% chance to give player 5 diamonds via command
+        2:
+          - "iron_ingot 3 50"                  # 50% chance to get 3 iron ingots
+          - "Command: /xp give %player% 5"      # 50% chance to give 5 XP levels
+        3:
+          - "gold_ingot 2 25"                  # 25% chance to get 2 gold ingots
+
+# Permissions
+permissions:
+  moneydrop:
+    default: 0                              # Default is 0%, no money drop unless otherwise set
+    max: 100                                # Max percentage
+    # List of possible percentages with permission keys
+    percentages:
+      - 100
+      - 50
+      - 25
+      - 10
+      - 5
+      - 0

@@ -1,0 +1,40 @@
+name: DungeonPlugin
+version: 1.0.0
+main: org.example.dungeon.DungeonPlugin
+api-version: 1.13
+author: YourName
+
+commands:
+  dungeon:
+    description: Start or manage the dungeon event
+    usage: /dungeon <start|forcestart>
+    permission: dungeon.command.use
+    permission-message: "&cYou do not have permission to use this command."
+
+permissions:
+  dungeon.command.use:
+    description: Allows the player to use the /dungeon command
+    default: op
+
+  moneydrop.0:
+    description: No money drop (can be used as a permission to prevent drops)
+    default: true
+
+  moneydrop.1:
+    description: Allows player to drop 1% of their money
+    default: true
+
+  moneydrop.2:
+    description: Allows player to drop 2% of their money
+    default: true
+
+  moneydrop.50:
+    description: Allows player to drop 50% of their money
+    default: true
+
+  moneydrop.100:
+    description: Allows player to drop 100% of their money
+    default: true
+
+# Add other configuration and settings if needed
+# For example, you'd define your messages and other settings here.
