@@ -1,0 +1,4 @@
+name: Killtoken
+version: '1.0-SNAPSHOT'
+main: com.leontab.killtoken.Killtoken
+api-version: '1.21'
