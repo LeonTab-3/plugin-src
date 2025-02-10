@@ -1,0 +1,4 @@
+name: blacklist
+version: '${version}'
+main: com.leontab.blacklist.ChatFilterPlugin
+api-version: '1.21'

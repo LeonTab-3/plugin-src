@@ -1,0 +1,4 @@
+blacklisted-words:
+  - "badword1"
+  - "badword2"
+discord-webhook: "https://discord.com/api/webhooks/YOUR_WEBHOOK_URL"
